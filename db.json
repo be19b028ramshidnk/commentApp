@@ -31,22 +31,7 @@
       "userId": "2",
       "parentId": "2",
       "createdAt": "2024-10-04T23:00:33.010+02:00"
-    },
-    {
-      "id": "05ca",
-      "body": "Hi",
-      "parentId": null,
-      "createdAt": "2024-10-05T04:38:47.897Z",
-      "userId": "1",
-      "username": "John"
-    },
-    {
-      "id": "1176",
-      "body": "hi\n",
-      "parentId": null,
-      "createdAt": "2024-10-05T04:46:14.974Z",
-      "userId": "1",
-      "username": "John"
     }
+    
   ]
 }
