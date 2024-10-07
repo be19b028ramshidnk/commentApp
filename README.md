@@ -1,14 +1,20 @@
 # CommentApp
+This Assignment I am creating a comment module. This modular approach will facilitate code reusability and ensure consistent functionality for comments on posts, profiles, and other entities.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+The comments module will be designed to be highly adaptable and configurable, allowing for seamless integration and customization in different contexts.
 
-## Development server
+## API
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To enhance the authenticity of our implementation, we will utilize the json-server tool. This instrument enables the rapid creation of a simulated API. To begin, we will globally install the json-server package using npm and subsequently establish a db.json file within our project directory
 
-## connecting t the server
+## UserId
+Here i manually added a user Id. This is because production applications have logged-in users, and typically, logged-in users can create and update comments
 
-npm install -g json-server
-json-server --watch db.json
+## Features of this application
+
+* Add comments
+* Delete comments
+* Edit comments
+
 
 
