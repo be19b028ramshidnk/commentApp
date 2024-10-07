@@ -31,30 +31,6 @@
       "userId": "2",
       "parentId": "2",
       "createdAt": "2024-10-04T23:00:33.010+02:00"
-    },
-    {
-      "id": "d532",
-      "body": "Third Comment",
-      "parentId": null,
-      "createdAt": "2024-10-06T14:26:20.147Z",
-      "userId": "1",
-      "username": "Ramshid N K"
-    },
-    {
-      "id": "2997",
-      "body": "Second Comment second child",
-      "parentId": "2",
-      "createdAt": "2024-10-06T16:03:12.930Z",
-      "userId": "1",
-      "username": "Ramshid"
-    },
-    {
-      "id": "f8c0",
-      "body": "fourth comment",
-      "parentId": null,
-      "createdAt": "2024-10-07T03:32:38.425Z",
-      "userId": "1",
-      "username": "Ramshid"
     }
-  ]
+   ]
 }
