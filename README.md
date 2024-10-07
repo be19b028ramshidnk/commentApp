@@ -1,27 +1,20 @@
 # CommentApp
+This Assignment I am creating a comment module. This modular approach will facilitate code reusability and ensure consistent functionality for comments on posts, profiles, and other entities.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+The comments module will be designed to be highly adaptable and configurable, allowing for seamless integration and customization in different contexts.
 
-## Development server
+## API
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To enhance the authenticity of our implementation, we will utilize the json-server tool. This instrument enables the rapid creation of a simulated API. To begin, we will globally install the json-server package using npm and subsequently establish a db.json file within our project directory
 
-## Code scaffolding
+## UserId
+Here i manually added a user Id. This is because production applications have logged-in users, and typically, logged-in users can create and update comments
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features of this application
 
-## Build
+* Add comments
+* Delete comments
+* Edit comments
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

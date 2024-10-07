@@ -1,12 +1,13 @@
-<div class="comments">
-  <h3 class="comments-title">Comments</h3>
+<div class="container">
+  <div class="comment-form">
   <div class="comment-form-title">Write comment</div>
   <comment-form
     submitLabel="Write"
     (handleSubmit)="addComment({ text: $event, parentId: null })"
   >
   </comment-form>
-  <div class="comments-container">
+  </div>
+  <div class="comments-list">
     <comment
       *ngFor="let rootComment of getRootComments()"
       [comment]="rootComment"
