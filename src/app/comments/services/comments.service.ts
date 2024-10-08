@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class CommentsService {
-  private apiUrl = 'https://67051ff7031fd46a830ebef9.mockapi.io/api/v1/comments'; // Replace with your MockAPI URL
+  private apiUrl = 'https://67051ff7031fd46a830ebef9.mockapi.io/api/v1/comments';
 
   constructor(private httpClient: HttpClient) {}
 
@@ -22,7 +22,7 @@ export class CommentsService {
       parentId,
       createdAt: new Date().toISOString(),
       userId: '1',
-      username: 'Ramshid N K', // You can change this as needed
+      username: 'Ramshid N K',
     });
   }
 
