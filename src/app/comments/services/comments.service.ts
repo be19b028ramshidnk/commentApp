@@ -5,41 +5,34 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class CommentsService {
+  private apiUrl = 'https://67051ff7031fd46a830ebef9.mockapi.io/api/v1/comments'; // Replace with your MockAPI URL
+
   constructor(private httpClient: HttpClient) {}
 
   getComments(): Observable<CommentInterface[]> {
-    return this.httpClient.get<CommentInterface[]>(
-      'http://localhost:3000/comments'
-    );
+    return this.httpClient.get<CommentInterface[]>(this.apiUrl);
   }
 
   createComment(
     text: string,
     parentId: string | null = null
   ): Observable<CommentInterface> {
-    return this.httpClient.post<CommentInterface>(
-      'http://localhost:3000/comments',
-      {
-        body: text,
-        parentId,
-        // Should not be set here
-        createdAt: new Date().toISOString(),
-        userId: '1',
-        username: 'Ramshid N K',
-      }
-    );
+    return this.httpClient.post<CommentInterface>(this.apiUrl, {
+      body: text,
+      parentId,
+      createdAt: new Date().toISOString(),
+      userId: '1',
+      username: 'Ramshid N K', // You can change this as needed
+    });
   }
 
   updateComment(id: string, text: string): Observable<CommentInterface> {
-    return this.httpClient.patch<CommentInterface>(
-      `http://localhost:3000/comments/${id}`,
-      {
-        body: text,
-      }
-    );
+    return this.httpClient.patch<CommentInterface>(`${this.apiUrl}/${id}`, {
+      body: text,
+    });
   }
 
   deleteComment(id: string): Observable<{}> {
-    return this.httpClient.delete(`http://localhost:3000/comments/${id}`);
+    return this.httpClient.delete(`${this.apiUrl}/${id}`);
   }
 }
